@@ -12,14 +12,74 @@
 
 <body class="bg-product min-w-auto">
 
-      <header class="flex justify-between items-center w-full py-5 px-10 bg-transparent text-white max-[900px]:hidden">
+      <header class="flex justify-between items-center w-full py-5 px-10 bg-transparent text-white">
             <div class="flex gap-x-3">
                   <div class="flex justify-center items-center">
-                        <a class="flex justify-center items-center text-white text-4xl" href="#"><ion-icon
+                        <a onclick="showsidebar()" class="flex justify-center items-center text-white text-4xl" href="#"><ion-icon
                                     name="menu-outline"></ion-icon></a>
+
+                                     <!-- Sidebar Website -->
+        <div class="hidden flex-col fixed top-0 right-0 h-[100vh] w-[300px] bg-text z-30 px-6 py-5 sidebar">
+            <ul class="text-white menu">
+              <a onclick="hidesidebar()" class="flex text-white text-5xl" href="#"><ion-icon name="close-outline"></ion-icon></a>
+              <a href="#"></a>
+           <li class="py-3"><a class="flex justify-start items-center text-white" href="index.html">خانه<ion-icon
+                  class="flex justify-start items-center" name="caret-down"></ion-icon></a></li>
+            <li class="py-3"><a class="flex justify-start items-center hover:text-white ease-in-out duration-200 page" href="#">صفحات<ion-icon class="flex justify-center items-center mx-1" name="caret-down"></ion-icon></a>
+              <ul class="">
+                <div class="w-full text-sm shadow-sm bg-white text-black backdrop-blur-2xl absolute z-20 hidden menu-li-i">
+                    <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">درباره ما</a></li>
+                    <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">تیم ما</a></li>
+                    <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">سوالات متداول</a></li>
+                    <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">404</a></li>
+                    <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">فروشگاه</a></li>
+                    <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="product.html">مقاله ها</a></li>
+                </div>
+            </ul>
+            </li>
+            <li class="py-3"><a class="flex justify-start items-center hover:text-white ease-in-out duration-200" href="#">سرویس<ion-icon
+                  class="flex justify-start items-center" name="caret-down"></ion-icon></a>
+                  <ul class="">
+                    <div class="w-full text-sm shadow-sm bg-white text-black backdrop-blur-2xl absolute z-20 hidden menu-li-i">
+                        <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">نسخه سرویس یک</a></li>
+                        <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">نسخه سرویس دو</a></li>
+                        <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">سرویس های قدیمی</a></li>
+                    </div>
+                </ul>
+                </li>
+            <li class="py-3"><a class="flex justify-start items-center hover:text-white ease-in-out duration-200" href="#">نمونه مقاله ها<ion-icon
+                  class="flex justify-start items-center" name="caret-down"></ion-icon></a>
+                  <ul class="">
+                    <div class="w-full text-sm shadow-sm bg-white text-black backdrop-blur-2xl absolute z-20 hidden menu-li-i">
+                        <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">تاریخ مختصر کشور ها</a></li>
+                        <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">جغرافیا کشور ها</a></li>
+                        <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">نحوه زندگی مردم</a></li>
+                        <li class="border-b-1 border-hover py-2 hover:bg-text hover:text-white duration-300 ease-in-out cursor-pointer"><a class="" href="#">پروژه های قدیمی</a></li>
+                    </div>
+                </ul>
+                </li>
+            <li class="py-3"><a class="flex justify-start items-center hover:text-white ease-in-out duration-200" href="#">وبلاگ<ion-icon
+                  class="flex justify-start items-center" name="caret-down"></ion-icon></a></li>
+            <li class="py-3"><a class="flex justify-start items-center hover:text-white ease-in-out duration-200" href="#">تماس با ما</a></li>
+            </ul>
+  
+            <div class="flex justify-start items-center gap-1.5 text-white icons w-full h-max mt-5">
+              <a class="flex justify-center items-center" href="#"><ion-icon name="logo-facebook"></ion-icon></a>
+              <a class="flex justify-center items-center" href="#"><ion-icon name="logo-twitter"></ion-icon></a>
+              <a class="flex justify-center items-center" href="#"><ion-icon name="logo-linkedin"></ion-icon></a>
+              <a class="flex justify-center items-center" href="#"><ion-icon name="logo-pinterest"></ion-icon></a>
+            </div>
+  
+            <div class="w-full mt-4">
+              <form class="w-full">
+                <input class="w-full py-2 px-5 text-white border-linediv border-1 rounded-[10px]" type="search" placeholder="جستجو...">
+              </form>
+            </div>
+            
+          </div>
                   </div>
                   <form>
-                        <div class="w-[350px] flex relative">
+                        <div class="w-[350px] flex relative max-[900px]:hidden">
                               <span class="absolute right-1 text-xl top-1.5 text-mainh2"><ion-icon
                                           name="search-outline"></ion-icon></span>
                               <input class="min-w-full  border-1 border-linediv px-7 py-1" type="search"
@@ -29,13 +89,15 @@
                         </div>
                   </form>
             </div>
-            <ul class="text-blue-300 flex gap-3">
+            <ul class="text-blue-300 flex gap-3 max-[900px]:hidden">
                   <li><a href="index.html">خانه</a></li>
                   <li><a href="#">ساخت حساب</a></li>
                   <li><a href="#">کمک مالی</a></li>
                   <li><a class="text-white font-semibold" href="#">...</a></li>
             </ul>
+            
       </header>
+      
 
       <div class="flex justify-between items-start">
             <!-- menu in the right page -->
@@ -585,6 +647,7 @@
             </div>
       </div>
 
+      <script src="assets/main.js"></script>
 </body>
 <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
 <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
